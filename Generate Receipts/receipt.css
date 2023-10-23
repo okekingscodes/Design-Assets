@@ -1,0 +1,9 @@
+body {
+    background: rgb(18, 48, 38);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#tablehead {
+    background: #111827;
+    color: #fff;
+}

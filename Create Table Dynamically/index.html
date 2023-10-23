@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Data</h1>
+
+    <form action="" method="POST" name="sample">
+        <br>
+        Roll No. <input type="number" name="rollno" id="">
+        Name <input type="text" name="name" id="">
+        <br><br>
+        <input type="button" name="add" value="Add Data" onclick="addStudent();"><hr>
+            <table id="table" class="table-class" border="1">
+                <thead>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+    </form>
+
+    <script type=text/javascript>
+    function addStudent() {
+        var rollno = document.sample.rollno.value;
+        var name = document.sample.name.value;
+
+        var tr = document.createElement('tr');
+
+        var td1 = tr.appendChild(document.createElement('td'));
+        var td2 = tr.appendChild(document.createElement('td'));
+
+        td1.innerHTML = rollno;
+        td2.innerHTML = name;
+
+        document.getElementById("table").appendChild(tr);
+    }
+    </script>
+</body>
+</html>
