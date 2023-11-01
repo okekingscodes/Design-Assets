@@ -6,19 +6,14 @@ function storeData() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    // Retrieving stored data and using it for verification
-    var user = localStorage.setItem("username", username);
-    var em = localStorage.setItem("email", email);
-    var pass = localStorage.setItem("password", password);
+    // Retrieving stored data from local storage
+    var user = localStorage.getItem("username");
+    var em = localStorage.getItem("email");
+    var pass = localStorage.getItem("password");
 
-    var a, b, c;
-    a = "john";
-    b = "okekings@gmail.com";
-    c = 12345;
-
-    if (a == user && b == em && c == pass) {
+    if (user == a && em == b && pass == c) {
         alert("Login successfully!")
-    }else {
+    } else {
         alert("Invalid details!")
     }
 }
