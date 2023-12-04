@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)" class="tab active">Personal Info</a>
+                <a onclick="tabs(1)" class="tab">Tasks</a>
+                <a onclick="tabs(2)" class="tab">Credit Card</a>
+                <a onclick="tabs(3)" class="tab">Payments</a>
+                <a onclick="tabs(4)" class="tab">Privacy</a>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="profile tabShow">
+                <h1>Account Details</h1>
+                <h2>Company's Name:</h2>
+                <input type="text" class="input" value="e.g: Lightmax Construction Company">
+                <h2>Office Address:</h2>
+                <input type="text" class="input" value="e.g: S34 E 65th Street, New York">
+                <h2>Contact Info:</h2>
+                <input type="text" class="input" value="e.g: +2348178506546">
+                <h2>Email Address</h2>
+                <input type="text" class="input" value="e.g: example@google.com">
+                <h2>Official Website</h2>
+                <input type="text" class="input" value="e.g: https://www.google.com">
+                <button class="btn">Update</button>
+            </div>
+            <div class="profile tabShow">
+                <h1>Payment Details</h1>
+                <h2>Payment Method:</h2>
+                <input type="text" class="input" value="e.g: MasterCard">
+                <h2>Card Number:</h2>
+                <input type="number" class="input" value="e.g: 1234 **** **** 5879">
+                <h2>Billing Address:</h2>
+                <input type="text" class="input" value="e.g: +S34 E 65th Street, New York">
+                <h2>Email Address</h2>
+                <input type="text" class="input" value="e.g: example@google.com">
+                <h2>Billing Date</h2>
+                <input type="datetime" class="input">
+                <button class="btn">Update</button>
+            </div>
+            <div class="profile tabShow">
+                <h1>Settings</h1>
+                <p>Do you want to be receiving email notifications?</p>
+                <input type="radio">
+                <h2>Card Number:</h2>
+                <input type="number" class="input" value="e.g: 1234 **** **** 5879">
+                <h2>Billing Address:</h2>
+                <input type="text" class="input" value="e.g: +S34 E 65th Street, New York">
+                <h2>Email Address</h2>
+                <input type="text" class="input" value="e.g: example@google.com">
+                <h2>Billing Date</h2>
+                <input type="datetime" class="input">
+                <button class="btn">Update</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(".tab").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
